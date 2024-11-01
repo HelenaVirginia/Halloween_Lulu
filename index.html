@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ultimate Halloween Movies Gallery</title>
+	<link href="https://fonts.googleapis.com/css2?family=Creepster&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="ambient-bg"></div>
+	<div class="particles-container"></div>
+
+	<header>
+		<h1 class="title">
+			<span class="spooky">Halloween</span>
+			<span class="classics">Classics</span>
+		</h1>
+	</header>
+
+	<main>
+		<div class="carousel-container">
+			<div class="carousel" id="movieCarousel"></div>
+		</div>
+
+		<div class="controls">
+			<button class="control-btn" id="prevBtn" aria-label="Previous movie">
+				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+					<path d="M15 18l-6-6 6-6" />
+				</svg>
+			</button>
+
+			<button class="control-btn" id="playBtn" aria-label="Play/Pause autoplay">
+				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+					<path d="M5 3l14 9-14 9V3z" />
+				</svg>
+			</button>
+
+			<button class="control-btn" id="nextBtn" aria-label="Next movie">
+				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+					<path d="M9 18l6-6-6-6" />
+				</svg>
+			</button>
+		</div>
+
+		<div class="movie-info" id="movieInfo">
+			<div class="info-content">
+				<h2 id="movieTitle"></h2>
+				<p class="year" id="movieYear"></p>
+				<p class="director" id="movieDirector"></p>
+				<p class="description" id="movieDescription"></p>
+			</div>
+			<div class="info-background"></div>
+		</div>
+	</main>
+
+<button id="playPauseButton">Play/Pause Terror Music</button>
+
+<audio id="terrorMusic" src="./Twin Lynches - Density & Time.mp3" loop></audio>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
